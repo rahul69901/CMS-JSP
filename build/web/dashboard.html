@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='dashboard1.css' rel='stylesheet'>
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+     <img src="a.png" style="height:50px;width:50px;border-radius:50%;">
+      <span class="logo_name">Username</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Info.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Galary</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="links_name">Alumni</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-coin-stack' ></i>
+            <span class="links_name">Hostel</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="links_name">Library</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-user' ></i>
+            <span class="links_name">Events</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Notices</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-heart' ></i>
+            <span class="links_name">Exams</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li class="log_out">
+            <a href="index.html">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">Username</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="number">My Profile</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text"><a href="">click here to view</a></span>
+            </div>
+          </div>
+          <i class='bx bx bxs cart four'><i class='bx bxs-user' style="padding-top:10px;"></i></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="number">My Course</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text"><a href="">click here to view</a></span>
+            </div>
+          </div>
+          <i class='bx bx bxs cart four'><i class='bx bx-list-ul' style="padding-top:10px;"></i></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="number">My Attendance</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text"><a href="">click here to view</a></span>
+            </div>
+          </div>
+          <i class='bx bx bxs cart four'><i class='bx bx-trending-up' style="padding-top:10px;"></i></i>
+        </div>
+          <div class="box">
+          <div class="right-side">
+            <div class="number">Scan to pay</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text"><a href="payment.html">click here to view</a></span>
+            </div>
+          </div>
+          <i class='bx bx bxs cart four'><i class='bx bx-trending-up' style="padding-top:10px;"></i></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="number">My Result</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text"><a href="">click here to view</a></span>
+            </div>
+          </div>
+          <i class='bx bx bxs cart four'><i class='bx bxs-bar-chart-alt-2' style="padding-top:10px;"></i></i>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+</body>
+</html>

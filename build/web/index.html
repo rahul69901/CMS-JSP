@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .header img {
+            width: 50px;
+            vertical-align: middle;
+            border-radius: 50%;
+        }
+        .header .title {
+            display: inline-block;
+            font-size: 24px;
+            margin-left: 10px;
+        }
+        .navbar {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a, .navbar select {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .navbar select {
+            background-color: #e94560;
+            border: none;
+            padding: 5px;
+            color: #fff;
+        }
+        .image-section {
+            text-align: center;
+            padding: 20px;
+            flex-grow: 1; /* This ensures that the image section expands to fill available space */
+        }
+        .image-section img {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #e94560;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWRh_RfGCOXreB_1jqaEmwqjTFRxL7B6ApZw&s" alt="University Logo">
+        <span class="title">SRI SRI University</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="create.html">Registration</a>
+        <a href="#Dashboard">Dashboard</a>
+        <select onchange="location = this.value;">
+            <option value="#">Login</option>
+            <option value="login.html">Student Login</option>
+            <option value="#">Teacher Login</option>
+        </select>
+    </div>
+
+    <!-- Image Section -->
+    <div class="image-section">
+        <img src="340-Gurudev-Sri-Sri-Ravi-Shankar.jpg" alt="University Image">
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2024 Sri Sri University. All rights reserved.
+        <br>
+        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+    </div>
+
+</body>
+</html>

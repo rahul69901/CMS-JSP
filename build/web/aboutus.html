@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - University Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .header img {
+            width: 50px;
+            vertical-align: middle;
+            border-radius: 50%;
+        }
+        .header .title {
+            display: inline-block;
+            font-size: 24px;
+            margin-left: 10px;
+        }
+        .navbar {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a, .navbar select {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .navbar select {
+            background-color: #e94560;
+            border: none;
+            padding: 5px;
+            color: #fff;
+        }
+        .content-section {
+            text-align: center;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .content-section h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .content-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #e94560;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWRh_RfGCOXreB_1jqaEmwqjTFRxL7B6ApZw&s" alt="University Logo">
+        <span class="title">SRI SRI University</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="create.html">Registration</a>
+        <a href="#Dashboard">Dashboard</a>
+        <select onchange="location = this.value;">
+            <option value="#">Login</option>
+            <option value="login.html">Student Login</option>
+            <option value="#">Teacher Login</option>
+        </select>
+    </div>
+
+    <!-- Content Section (Specific to About Us Page) -->
+    <div class="content-section">
+        <h1>About Us</h1>
+        <p>
+            Sri Sri University was established with the goal of providing world-class education while fostering
+            holistic development in students. We focus on critical thinking, innovation, and research to shape the
+            future leaders of tomorrow.
+        </p>
+        <p>
+            Our core values include a commitment to excellence, ethical practices, and a global perspective on
+            education. We believe in nurturing both the mind and character of our students.
+        </p>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2024 Sri Sri University. All rights reserved.
+        <br>
+        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+    </div>
+
+</body>
+</html>
